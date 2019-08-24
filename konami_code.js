@@ -36,4 +36,4 @@ function init() {
   document.body.addEventListener('keydown', keyPress(e));
 
 }
-init();
+window.onload({init()});
