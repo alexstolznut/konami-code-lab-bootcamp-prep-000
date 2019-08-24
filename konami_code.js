@@ -35,7 +35,7 @@ function init() {
     }
 
   }
-  document.body.addEventListener('keydown', keyPress(e));
+  document.body.addEventListener('keydown', keyPress);
 
 }
 window.onload = function() {
