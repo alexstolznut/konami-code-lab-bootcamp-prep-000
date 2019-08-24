@@ -14,18 +14,22 @@ const codes = [
 
 function init() {
   let index = 0;
-
+  let codeStore = [];
   function keyPress(e){
 
     const key = e.key;
 
     if(key === codes[index]){
       index++;
-      console.log(index, 'correct');
 
-      if(index === codes.length ) {
-        alert('Congratulations, you cracked the code!');
-        index = 0;
+      codeStore.push(key);
+      console.log(codeStore);
+      if(codeStore.length === codes.length ) {
+          if(JSON.stringify(codeStore) === JSON.stringify(codes)){
+            alert('Congratulations, you cracked the code!');
+            index = 0;
+          }
+        }
       }
     } else {
       index = 0;
