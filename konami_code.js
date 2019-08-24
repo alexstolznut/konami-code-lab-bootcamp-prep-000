@@ -18,6 +18,7 @@ function init() {
   let codeStore = [];
 
   function keyPress(e){
+    e.stopPropagation();
 
     const key = e.key;
     console.log(key);
@@ -47,7 +48,7 @@ function init() {
     }
 
   }
-  document.body.addEventListener('keydown', keyPress, true);
+  document.body.addEventListener('keydown', keyPress);
 
 }
 init();
