@@ -20,7 +20,7 @@ function init() {
   mocha.addEventListener('click', keyPress(codes[index]))
   for(let i = 0; i < codes.length; i++){
     mocha.click();
-    index++;
+    // index++;
   }
   function keyPress(e){
     console.log(e);
