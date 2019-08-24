@@ -16,7 +16,9 @@ function init() {
   let index = 0;
   let codeStore = []
 
+
   function keyPress(e){
+      console.log(e.key);
     const key = e.key;
 
     if(key === codes[index]){
