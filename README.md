@@ -21,6 +21,25 @@ const codes = [
   "a"
 ];
 
+let index = 0;
+let codeStore = []
+
+function keyPress(e){
+  const key = e.key;
+
+  if(key === codes[index]){
+    index++;
+    console.log(index, 'correct');
+  } else {
+    index = 0;
+    console.log(index, 'restart');
+  }
+  if(index.length === codes.length ) {
+    alert('Congratulations, you cracked the code!');
+  }
+}
+document.body.addEventListener('click', keyPress(e));
+
 function init() {
   // your code here
 }
