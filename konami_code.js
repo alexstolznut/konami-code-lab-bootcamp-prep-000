@@ -37,7 +37,7 @@ function init() {
             console.log('Congratulations, you cracked the code!');
             codeStore = [];
             index = 0;
-        
+
         }
 
     } else {
