@@ -22,7 +22,7 @@ function init() {
     const key = e.key;
     console.log(key);
     if(key === codes[index]){
-      index++;
+      
 
       codeStore.push(key);
 
@@ -37,6 +37,7 @@ function init() {
 
         }
       }
+      index++;
 
     } else {
       index = 0;
