@@ -45,8 +45,9 @@ function init() {
 
   }
   const mocha = document.getElementById('mocha');
-  mocha.addEventListener('click', keyPress(codes[index]))
+
   for(let i = 0; i < codes.length; i++){
+      mocha.addEventListener('click', keyPress(codes[index]))
     mocha.click();
     console.log(i);
     // index++;
