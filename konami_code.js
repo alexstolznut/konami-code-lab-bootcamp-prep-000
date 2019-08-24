@@ -14,7 +14,7 @@ const codes = [
 
 function init() {
   let index = 0;
-  let codeStore = []
+  console.log('init');
 
 
   function keyPress(e){
