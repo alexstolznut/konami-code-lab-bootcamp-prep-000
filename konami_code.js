@@ -14,9 +14,9 @@ const codes = [
 
 function init() {
   const mocha = document.getElementById('mocha');
-  mocha.addEventListener(click, function(){console.log(codes[index])})
+  mocha.addEventListener('click', function(){console.log(codes[index])})
   for(let i = 0; i < codes.length; i++){
-    mocha.click()
+    mocha.click();
     index++;
   }
   let index = 0;
