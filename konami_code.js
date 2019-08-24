@@ -27,6 +27,7 @@ function init() {
       if(codeStore.length === codes.length ) {
           if(JSON.stringify(codeStore) === JSON.stringify(codes)){
             alert('Congratulations, you cracked the code!');
+            codeStore = [];
             index = 0;
           }
         }
