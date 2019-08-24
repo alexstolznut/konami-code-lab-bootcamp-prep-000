@@ -52,7 +52,7 @@ function init() {
   //   console.log(i);
   //   // index++;
   // }
-  // document.body.addEventListener('keydown', keyPress(codes[index]));
+  document.body.addEventListener('keydown', keyPress(codes[index]));
 
 }
 init();
