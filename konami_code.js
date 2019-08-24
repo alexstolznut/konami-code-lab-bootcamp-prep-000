@@ -37,6 +37,7 @@ function init() {
 
     } else {
       index = 0;
+      codeStore = [];
       console.log(index, 'restart');
     }
 
