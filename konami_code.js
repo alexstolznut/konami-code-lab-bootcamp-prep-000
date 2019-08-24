@@ -26,11 +26,11 @@ function init() {
     console.log(e);
     const key = e.key;
     console.log(key);
-    if(key === codes[index]){
-      console.log(key);
+    if(e === codes[index]){
+      console.log(e);
       index++;
 
-      codeStore.push(key);
+      codeStore.push(e);
       console.log(codeStore);
       if(JSON.stringify(codeStore) === JSON.stringify(codes)) {
 
@@ -49,7 +49,7 @@ function init() {
     }
 
   }
-  document.body.addEventListener('keydown', keyPress);
+  document.body.addEventListener('keydown', keyPress(codes[index]));
 
 }
 init();
