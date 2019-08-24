@@ -31,7 +31,6 @@ function init() {
             console.log('Congratulations, you cracked the code!');
             codeStore = [];
             index = 0;
-            return;
           }
         }
 
@@ -39,6 +38,7 @@ function init() {
       index = 0;
       codeStore = [];
       console.log(index, 'restart');
+
     }
 
   }
