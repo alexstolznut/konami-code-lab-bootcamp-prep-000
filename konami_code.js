@@ -17,9 +17,9 @@ function init() {
   let index = 0;
   let codeStore = [];
   const mocha = document.getElementById('mocha');
-  mocha.addEventListener('click', keyPress(codes[index]))
+  mocha.addEventListener('keydown', keyPress(codes[index]))
   for(let i = 0; i < codes.length; i++){
-    mocha.click();
+    mocha.keydown();
     // index++;
   }
   function keyPress(e){
