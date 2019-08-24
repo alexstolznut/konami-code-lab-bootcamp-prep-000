@@ -47,15 +47,7 @@ function init() {
     }
 
   }
-  const mocha = document.getElementById('mocha');
-
-  // for(let i = 0; i < codes.length; i++){
-  //     mocha.addEventListener('click', keyPress(codes[index]))
-  //   mocha.click();
-  //   console.log(i);
-  //   // index++;
-  // }
-  document.body.addEventListener('keydown', keyPress);
+  document.body.addEventListener('keydown', keyPress, true);
 
 }
 init();
