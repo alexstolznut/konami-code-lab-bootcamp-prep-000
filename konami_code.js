@@ -29,6 +29,7 @@ function init() {
             alert('Congratulations, you cracked the code!');
             codeStore = [];
             index = 0;
+            return;
           }
         }
 
