@@ -25,7 +25,7 @@ function init() {
       index++;
       console.log(index, 'correct');
 
-      if(index.length === codes.length ) {
+      if(index === codes.length ) {
         alert('Congratulations, you cracked the code!');
         index = 0;
       }
