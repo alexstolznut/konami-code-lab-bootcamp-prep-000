@@ -28,7 +28,8 @@ describe("index.js", () => {
 
     it("triggers an alert if the right code is entered", () => {
 
-      for (let i = 0, i < codes.length;  i++) {
+      for (let i = 0, l = codes.length; i < l; i++) {
+        it(codes.length 'codes length');
         triggerKeyDown(codes[i]);
       }
       expect(spy.called).to.equal(true)
