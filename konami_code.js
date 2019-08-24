@@ -51,4 +51,3 @@ function init() {
   document.body.addEventListener('keydown', keyPress, true);
 
 }
-
