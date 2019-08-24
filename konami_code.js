@@ -18,7 +18,7 @@ function init() {
 
 
   function keyPress(e){
-    alert(e.key);
+
     const key = e.key;
 
     if(key === codes[index]){
