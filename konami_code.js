@@ -23,7 +23,7 @@ function init() {
     index++;
   }
   function keyPress(e){
-
+    console.log(e);
     const key = e.key;
 
     if(key === codes[index]){
