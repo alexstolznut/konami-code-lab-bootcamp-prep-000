@@ -16,12 +16,7 @@ function init() {
 
   let index = 0;
   let codeStore = [];
-  const mocha = document.getElementById('mocha');
-  mocha.addEventListener('keydown', keyPress(codes[index]))
-  for(let i = 0; i < codes.length; i++){
-    mocha.keydown();
-    // index++;
-  }
+
   function keyPress(e){
     console.log(e);
     const key = e.key;
@@ -48,6 +43,12 @@ function init() {
 
     }
 
+  }
+  const mocha = document.getElementById('mocha');
+  mocha.addEventListener('click', keyPress(codes[index]))
+  for(let i = 0; i < codes.length; i++){
+    mocha.click();
+    // index++;
   }
   // document.body.addEventListener('keydown', keyPress(codes[index]));
 
