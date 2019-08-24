@@ -14,8 +14,6 @@ const codes = [
 
 function init() {
   let index = 0;
-  console.log('init');
-
 
   function keyPress(e){
 
