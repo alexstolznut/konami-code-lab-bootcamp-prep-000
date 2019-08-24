@@ -38,6 +38,4 @@ function init() {
   document.body.addEventListener('keydown', keyPress);
 
 }
-window.onload = function() {
-  init();
-}
+init();
