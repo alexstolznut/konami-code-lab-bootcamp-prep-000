@@ -48,7 +48,7 @@ function init() {
     }
 
   }
-  document.body.addEventListener('keydown', keyPress);
+  document.body.addEventListener('keydown', keyPress, true);
 
 }
 init();
