@@ -13,7 +13,7 @@ const codes = [
 
 
 function init() {
-  const mocha = getElementById('mocha');
+  const mocha = document.getElementById('mocha');
   mocha.addEventListener(click, keyPress(codes[index]))
   for(let i = 0; i < codes.length; i++){
     mocha.click()
